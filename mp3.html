@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>تحميل تيك توك MP3 - استخراج الصوت مجاناً | TikSave</title>
+<meta name="description" content="تحميل صوت تيك توك MP3 مجاناً. استخرج الموسيقى والصوت من أي فيديو تيك توك بجودة عالية بدون برامج.">
+<meta name="keywords" content="تحميل تيك توك MP3, استخراج صوت تيك توك, موسيقى تيك توك, tiktok to mp3">
+<!-- Favicon -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🎵</text></svg>">
+  
+<link rel="canonical" href="https://tiksave.com/mp3.html">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+<style>
+  :root{--bg:#0a0a0f;--surface:#111118;--card:#16161f;--border:#1e1e2e;--accent:#fe2c55;--accent2:#25f4ee;--text:#f0f0f8;--muted:#6b6b8a}
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{font-family:'Cairo',sans-serif;background:var(--bg);color:var(--text);min-height:100vh}
+  body::before{content:'';position:fixed;inset:0;background:radial-gradient(ellipse 80% 50% at 20% 10%,rgba(254,44,85,0.08) 0%,transparent 60%),radial-gradient(ellipse 60% 40% at 80% 80%,rgba(37,244,238,0.06) 0%,transparent 60%);pointer-events:none;z-index:0}
+  nav{position:fixed;top:0;width:100%;z-index:100;padding:16px 32px;display:flex;align-items:center;justify-content:space-between;background:rgba(10,10,15,0.85);backdrop-filter:blur(20px);border-bottom:1px solid var(--border)}
+  .logo{display:flex;align-items:center;gap:10px;text-decoration:none}
+  .logo-icon{width:36px;height:36px;background:linear-gradient(135deg,var(--accent),var(--accent2));border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:18px}
+  .logo-text{font-size:22px;font-weight:900;background:linear-gradient(90deg,var(--accent),var(--accent2));-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
+  .nav-links{display:flex;gap:4px;list-style:none}
+  .nav-links a{color:var(--muted);text-decoration:none;padding:8px 14px;border-radius:8px;font-size:13px;font-weight:600;transition:all .2s;border:1px solid transparent}
+  .nav-links a:hover,.nav-links a.active{color:var(--accent);border-color:rgba(254,44,85,0.3);background:rgba(254,44,85,0.08)}
+  .ad-banner{margin-top:70px;padding:12px 24px;background:var(--surface);border-bottom:1px solid var(--border);text-align:center;min-height:60px;display:flex;align-items:center;justify-content:center}
+  .ad-placeholder{width:100%;max-width:728px;height:90px;background:var(--card);border:1px dashed var(--border);border-radius:8px;display:flex;align-items:center;justify-content:center;color:var(--muted);font-size:12px}
+  .hero{position:relative;z-index:1;padding:60px 24px;text-align:center;max-width:800px;margin:0 auto}
+  .page-icon{font-size:64px;margin-bottom:20px;display:block}
+  h1{font-size:clamp(32px,6vw,60px);font-weight:900;margin-bottom:16px;line-height:1.1}
+  h1 span{background:linear-gradient(135deg,var(--accent),var(--accent2));-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
+  .subtitle{font-size:17px;color:var(--muted);line-height:1.7;margin-bottom:40px}
+  .download-card{background:var(--card);border:1px solid var(--border);border-radius:24px;padding:32px;box-shadow:0 40px 80px rgba(0,0,0,0.4);position:relative}
+  .input-wrapper{display:flex;gap:12px;margin-bottom:12px}
+  .url-input{flex:1;background:var(--surface);border:1px solid var(--border);border-radius:14px;padding:16px 20px;font-family:'Cairo',sans-serif;font-size:15px;color:var(--text);outline:none;transition:all .3s;direction:ltr}
+  .url-input::placeholder{color:var(--muted);direction:rtl}
+  .url-input:focus{border-color:var(--accent2);box-shadow:0 0 0 3px rgba(37,244,238,0.1)}
+  .btn-mp3{padding:16px 28px;background:linear-gradient(135deg,var(--accent2),#1bc5bf);border:none;border-radius:14px;color:#000;font-family:'Cairo',sans-serif;font-size:15px;font-weight:700;cursor:pointer;white-space:nowrap;transition:all .2s}
+  .btn-mp3:hover{transform:translateY(-2px);box-shadow:0 10px 30px rgba(37,244,238,0.3)}
+  .btn-mp3:disabled{opacity:.6;cursor:not-allowed;transform:none}
+  .loading{display:none;text-align:center;padding:20px;color:var(--muted)}
+  .loading.show{display:block}
+  .spinner{width:36px;height:36px;border:3px solid var(--border);border-top-color:var(--accent2);border-radius:50%;animation:spin .8s linear infinite;margin:0 auto 12px}
+  @keyframes spin{to{transform:rotate(360deg)}}
+  .error-msg{display:none;padding:14px 18px;background:rgba(254,44,85,0.08);border:1px solid rgba(254,44,85,0.2);border-radius:10px;color:var(--accent);font-size:14px;margin-top:12px}
+  .error-msg.show{display:block}
+  .result-area{display:none;margin-top:20px;padding:20px;background:var(--surface);border-radius:14px;border:1px solid var(--border)}
+  .result-area.show{display:block}
+  .dl-btn-mp3{display:block;padding:14px;border-radius:12px;background:linear-gradient(135deg,var(--accent2),#1bc5bf);border:none;color:#000;font-family:'Cairo',sans-serif;font-size:15px;font-weight:700;cursor:pointer;text-align:center;text-decoration:none;transition:all .2s;margin-top:12px}
+  .dl-btn-mp3:hover{transform:translateY(-2px);box-shadow:0 10px 30px rgba(37,244,238,0.3)}
+  .content{position:relative;z-index:1;padding:60px 24px;max-width:800px;margin:0 auto}
+  h2{font-size:28px;font-weight:900;margin-bottom:20px}
+  p{color:var(--muted);line-height:1.8;margin-bottom:16px;font-size:15px}
+  .ad-middle{position:relative;z-index:1;padding:32px 24px;text-align:center}
+  .ad-square{width:300px;height:250px;margin:0 auto;background:var(--card);border:1px dashed var(--border);border-radius:12px;display:flex;align-items:center;justify-content:center;color:var(--muted);font-size:12px}
+  footer{position:relative;z-index:1;padding:32px 24px;border-top:1px solid var(--border);text-align:center;color:var(--muted);font-size:13px;background:var(--surface)}
+  .footer-links{display:flex;gap:20px;justify-content:center;margin-bottom:12px;flex-wrap:wrap}
+  .footer-links a{color:var(--muted);text-decoration:none}
+  .footer-links a:hover{color:var(--text)}
+  @media(max-width:600px){.input-wrapper{flex-direction:column}.btn-mp3{width:100%}.nav-links{display:none}}
+</style>
+</head>
+<body>
+
+<nav>
+  <a href="/" class="logo">
+    <div class="logo-icon">🎵</div>
+    <span class="logo-text">TikSave</span>
+  </a>
+  <ul class="nav-links">
+    <li><a href="/"class="active">الرئيسية</a></li>
+    <li><a href="/mp3.html" class="active">تحميل MP3</a></li>
+    <li><a href="/blog.html"class="active">المدونة</a></li>
+    <li><a href="/faq.html"class="active">الأسئلة الشائعة</a></li>
+  </ul>
+</nav>
+
+<div class="ad-banner">
+  <!-- إعلان Adsterra 728x90 -->
+  <div class="ad-placeholder">إعلان 728×90</div>
+</div>
+
+<section class="hero">
+  <span class="page-icon">🎵</span>
+  <h1>تحميل تيك توك <span>MP3</span></h1>
+  <p class="subtitle">استخرج الموسيقى والصوت من أي فيديو تيك توك مجاناً بجودة عالية</p>
+
+  <div class="download-card">
+    <div class="input-wrapper">
+      <input type="text" class="url-input" id="urlInput"
+        placeholder="الصق رابط فيديو تيك توك هنا..."
+        onkeydown="if(event.key==='Enter') startDownload()">
+      <button class="btn-mp3" onclick="startDownload()" id="dlBtn">استخراج MP3</button>
+    </div>
+    <div class="loading" id="loading"><div class="spinner"></div><div>جاري استخراج الصوت...</div></div>
+    <div class="error-msg" id="errorMsg"></div>
+    <div class="result-area" id="resultArea">
+      <div id="videoTitle" style="font-weight:700;margin-bottom:8px"></div>
+      <div id="videoAuthor" style="color:var(--muted);font-size:13px;margin-bottom:12px"></div>
+      <a href="#" class="dl-btn-mp3" id="dlMP3" target="_blank">⬇️ تحميل MP3</a>
+    </div>
+  </div>
+</section>
+
+<div class="ad-middle">
+  <div class="ad-square">إعلان 300×250</div>
+</div>
+
+<section class="content">
+  <h2>كيف تحمّل صوت تيك توك بصيغة MP3؟</h2>
+  <p>تحميل الصوت من تيك توك أصبح سهلاً جداً مع TikSave. فقط انسخ رابط الفيديو من تطبيق تيك توك، والصقه في الحقل أعلاه، واضغط على "استخراج MP3" وسيتم تحويل الفيديو إلى ملف صوتي بجودة عالية خلال ثوانٍ.</p>
+  <p>يمكنك استخدام هذه الأداة لتحميل الأغاني والموسيقى من تيك توك على هاتفك أو جهاز الكمبيوتر بدون الحاجة لتثبيت أي برنامج. الخدمة مجانية بالكامل وتعمل على جميع الأجهزة والمتصفحات.</p>
+
+  <h2 style="margin-top:40px">مميزات تحميل MP3 من تيك توك</h2>
+  <p>جودة صوت عالية تصل إلى 128kbps، تحميل سريع بدون انتظار، يعمل على جميع أنظمة التشغيل Windows وMac وAndroid وiOS، ولا يحتاج أي تسجيل أو اشتراك.</p>
+</section>
+
+<footer>
+  <div class="footer-links">
+    <a href="/">الرئيسية</a>
+    <a href="/mp3.html">تحميل MP3</a>
+    <a href="/faq.html">الأسئلة الشائعة</a>
+    <a href="/privacy.html">سياسة الخصوصية</a>
+
+  </div>
+  <p>© 2025 TikSave</p>
+</footer>
+
+<script>
+  async function startDownload() {
+    const url = document.getElementById('urlInput').value.trim();
+    const loading = document.getElementById('loading');
+    const errorMsg = document.getElementById('errorMsg');
+    const resultArea = document.getElementById('resultArea');
+    const dlBtn = document.getElementById('dlBtn');
+    loading.classList.remove('show'); errorMsg.classList.remove('show'); resultArea.classList.remove('show');
+    if (!url || !url.includes('tiktok.com')) { showError('الرجاء إدخال رابط تيك توك صحيح'); return; }
+    loading.classList.add('show'); dlBtn.disabled = true; dlBtn.textContent = '...';
+    try {
+      const res = await fetch('/api/download', { method:'POST', headers:{'Content-Type':'application/json'}, body:JSON.stringify({url, format:'mp3'}) });
+      const data = await res.json();
+      if (!res.ok || data.error) throw new Error(data.error || 'حدث خطأ');
+      loading.classList.remove('show');
+      document.getElementById('videoTitle').textContent = data.title || 'فيديو تيك توك';
+      document.getElementById('videoAuthor').textContent = '@' + (data.author || 'unknown');
+      if (data.download_mp3) document.getElementById('dlMP3').href = data.download_mp3;
+      resultArea.classList.add('show');
+    } catch(err) { loading.classList.remove('show'); showError(err.message); }
+    finally { dlBtn.disabled = false; dlBtn.textContent = 'استخراج MP3'; }
+  }
+  function showError(msg) { const e=document.getElementById('errorMsg'); e.textContent='⚠️ '+msg; e.classList.add('show'); }
+</script>
+</body>
+</html>
