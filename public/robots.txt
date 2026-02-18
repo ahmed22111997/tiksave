@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://tiksave-f3u6.onrender.com/sitemap.xml

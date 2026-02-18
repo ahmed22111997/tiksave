@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>تحميل تيك توك بدون علامة مائية - TikSave</title>
+<meta name="description" content="تحميل فيديوهات تيك توك بدون علامة مائية مجاناً. احفظ أي فيديو تيك توك بصيغة MP4 عالية الجودة أو MP3 بدون برامج.">
+<meta name="keywords" content="تحميل تيك توك, بدون علامة مائية, تنزيل تيك توك, tiktok downloader, حفظ فيديو تيك توك, تيك توك MP3">
+<meta name="robots" content="index, follow">
+<meta property="og:title" content="تحميل تيك توك بدون علامة مائية - TikSave">
+<meta property="og:description" content="أداة مجانية لتحميل فيديوهات تيك توك بدون علامة مائية بجودة عالية">
+<meta property="og:type" content="website">
+<link rel="canonical" href="https://tiksave.com/">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;900&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<!-- Favicon -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🎵</text></svg>">
+  
+
+
+
+<!-- ======= Adsterra / Monetag: ضع كود الإعلان هنا ======= -->
+<!-- <script src="//your-ad-network-script.js"></script> -->
+
+<style>
+  :root {
+    --bg: #0a0a0f;
+    --surface: #111118;
+    --card: #16161f;
+    --border: #1e1e2e;
+    --accent: #fe2c55;
+    --accent2: #25f4ee;
+    --text: #f0f0f8;
+    --muted: #6b6b8a;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    font-family: 'Cairo', sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    min-height: 100vh;
+    overflow-x: hidden;
+  }
+
+  body::before {
+    content: '';
+    position: fixed;
+    inset: 0;
+    background: 
+      radial-gradient(ellipse 80% 50% at 20% 10%, rgba(254,44,85,0.08) 0%, transparent 60%),
+      radial-gradient(ellipse 60% 40% at 80% 80%, rgba(37,244,238,0.06) 0%, transparent 60%);
+    pointer-events: none;
+    z-index: 0;
+  }
+
+  body::after {
+    content: '';
+    position: fixed;
+    inset: 0;
+    background-image: 
+      linear-gradient(rgba(255,255,255,0.02) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(255,255,255,0.02) 1px, transparent 1px);
+    background-size: 60px 60px;
+    pointer-events: none;
+    z-index: 0;
+  }
+
+  nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+    padding: 16px 32px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: rgba(10,10,15,0.85);
+    backdrop-filter: blur(20px);
+    border-bottom: 1px solid var(--border);
+  }
+
+  .logo { display: flex; align-items: center; gap: 10px; text-decoration: none; }
+  .logo-icon {
+    width: 36px; height: 36px;
+    background: linear-gradient(135deg, var(--accent), var(--accent2));
+    border-radius: 10px;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 18px;
+  }
+  .logo-text {
+    font-size: 22px; font-weight: 900;
+    background: linear-gradient(90deg, var(--accent), var(--accent2));
+    background-clip: text;
+    -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+  }
+
+  .nav-links { display: flex; gap: 4px; list-style: none; }
+  .nav-links a {
+    color: var(--muted); text-decoration: none;
+    padding: 8px 14px; border-radius: 8px;
+    font-size: 13px; font-weight: 600;
+    transition: all 0.2s; border: 1px solid transparent;
+  }
+  .nav-links a:hover { color: var(--text); border-color: var(--border); background: var(--card); }
+  .nav-links a.active { color: var(--accent); border-color: rgba(254,44,85,0.3); background: rgba(254,44,85,0.08); }
+
+  /* AD BANNER TOP */
+  .ad-banner-top {
+    position: relative; z-index: 1;
+    margin-top: 70px;
+    padding: 12px 24px;
+    background: var(--surface);
+    border-bottom: 1px solid var(--border);
+    text-align: center;
+    min-height: 60px;
+    display: flex; align-items: center; justify-content: center;
+  }
+  .ad-placeholder {
+    width: 100%; max-width: 728px; height: 90px;
+    background: var(--card);
+    border: 1px dashed var(--border);
+    border-radius: 8px;
+    display: flex; align-items: center; justify-content: center;
+    color: var(--muted); font-size: 12px;
+  }
+
+  .hero {
+    position: relative; z-index: 1;
+    min-height: calc(100vh - 130px);
+    display: flex; flex-direction: column;
+    align-items: center; justify-content: center;
+    padding: 60px 24px 60px;
+    text-align: center;
+  }
+
+  .badge {
+    display: inline-flex; align-items: center; gap: 8px;
+    padding: 6px 16px;
+    background: rgba(254,44,85,0.1);
+    border: 1px solid rgba(254,44,85,0.3);
+    border-radius: 100px;
+    font-size: 13px; color: var(--accent); font-weight: 600;
+    margin-bottom: 28px;
+    animation: fadeInDown 0.6s ease both;
+  }
+  .badge::before {
+    content: ''; width: 6px; height: 6px;
+    background: var(--accent); border-radius: 50%;
+    animation: pulse 2s infinite;
+  }
+
+  @keyframes pulse { 0%,100%{opacity:1;transform:scale(1)} 50%{opacity:.5;transform:scale(1.5)} }
+
+  h1 {
+    font-size: clamp(36px, 7vw, 72px);
+    font-weight: 900; line-height: 1.05;
+    margin-bottom: 20px;
+    animation: fadeInDown 0.6s ease 0.1s both;
+  }
+  h1 span {
+    background: linear-gradient(135deg, var(--accent) 0%, #ff6b6b 40%, var(--accent2) 100%);
+    background-clip: text;
+    -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+  }
+
+  .subtitle {
+    font-size: 17px; color: var(--muted);
+    max-width: 500px; line-height: 1.7;
+    margin-bottom: 40px; font-weight: 400;
+    animation: fadeInDown 0.6s ease 0.2s both;
+  }
+
+  .download-card {
+    width: 100%; max-width: 680px;
+    background: var(--card); border: 1px solid var(--border);
+    border-radius: 24px; padding: 32px;
+    position: relative;
+    animation: fadeInUp 0.7s ease 0.3s both;
+    box-shadow: 0 40px 80px rgba(0,0,0,0.4);
+  }
+  .download-card::before {
+    content: ''; position: absolute; inset: 0;
+    border-radius: 24px; padding: 1px;
+    background: linear-gradient(135deg, rgba(254,44,85,0.3), rgba(37,244,238,0.1), transparent);
+    -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor; mask-composite: exclude;
+    pointer-events: none;
+  }
+
+  .format-tabs { display: flex; gap: 8px; margin-bottom: 20px; }
+  .tab {
+    flex: 1; padding: 10px;
+    background: var(--surface); border: 1px solid var(--border);
+    border-radius: 10px; color: var(--muted);
+    font-family: 'Cairo', sans-serif; font-size: 13px; font-weight: 600;
+    cursor: pointer; transition: all 0.2s; text-align: center;
+  }
+  .tab.active { background: rgba(254,44,85,0.1); border-color: rgba(254,44,85,0.4); color: var(--accent); }
+  .tab:hover:not(.active) { border-color: var(--muted); color: var(--text); }
+
+  .input-wrapper { display: flex; gap: 12px; margin-bottom: 8px; }
+  .url-input {
+    flex: 1; background: var(--surface); border: 1px solid var(--border);
+    border-radius: 14px; padding: 16px 20px;
+    font-family: 'Cairo', sans-serif; font-size: 15px; color: var(--text);
+    outline: none; transition: all 0.3s; direction: ltr;
+  }
+  .url-input::placeholder { color: var(--muted); direction: rtl; }
+  .url-input:focus { border-color: var(--accent); box-shadow: 0 0 0 3px rgba(254,44,85,0.1); }
+
+  .btn-download {
+    padding: 16px 28px;
+    background: linear-gradient(135deg, var(--accent), #ff5c77);
+    border: none; border-radius: 14px;
+    color: white; font-family: 'Cairo', sans-serif;
+    font-size: 15px; font-weight: 700;
+    cursor: pointer; white-space: nowrap; transition: all 0.2s;
+  }
+  .btn-download:hover { transform: translateY(-2px); box-shadow: 0 10px 30px rgba(254,44,85,0.4); }
+  .btn-download:disabled { opacity: 0.6; cursor: not-allowed; transform: none; }
+
+  .loading { display: none; text-align: center; padding: 20px; color: var(--muted); }
+  .loading.show { display: block; }
+  .spinner {
+    width: 36px; height: 36px;
+    border: 3px solid var(--border); border-top-color: var(--accent);
+    border-radius: 50%; animation: spin 0.8s linear infinite;
+    margin: 0 auto 12px;
+  }
+  @keyframes spin { to { transform: rotate(360deg); } }
+
+  .error-msg {
+    display: none; padding: 14px 18px;
+    background: rgba(254,44,85,0.08); border: 1px solid rgba(254,44,85,0.2);
+    border-radius: 10px; color: var(--accent); font-size: 14px; margin-top: 12px;
+  }
+  .error-msg.show { display: block; }
+
+  .result-area {
+    display: none; margin-top: 20px; padding: 20px;
+    background: var(--surface); border-radius: 14px; border: 1px solid var(--border);
+    animation: fadeInUp 0.4s ease both;
+  }
+  .result-area.show { display: block; }
+
+  .result-info { display: flex; gap: 16px; align-items: center; margin-bottom: 16px; }
+  .video-thumb {
+    width: 72px; height: 72px; border-radius: 10px;
+    background: linear-gradient(135deg, var(--accent), var(--accent2));
+    display: flex; align-items: center; justify-content: center;
+    font-size: 28px; flex-shrink: 0; overflow: hidden;
+  }
+  .video-thumb img { width:100%; height:100%; object-fit:cover; }
+  .video-title {
+    font-size: 14px; font-weight: 600; margin-bottom: 6px;
+    display: -webkit-box; -webkit-line-clamp: 2; line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;
+  }
+  .video-author { font-size: 12px; color: var(--muted); }
+
+  .download-options { display: grid; grid-template-columns: repeat(3,1fr); gap: 8px; }
+  .dl-btn {
+    padding: 10px 8px; border-radius: 10px;
+    border: 1px solid var(--border); background: var(--card);
+    color: var(--text); font-family: 'Cairo', sans-serif;
+    font-size: 12px; font-weight: 600; cursor: pointer;
+    transition: all 0.2s; text-align: center; text-decoration: none; display: block;
+  }
+  .dl-btn.primary { background: linear-gradient(135deg, var(--accent), #ff5c77); border-color: transparent; color: white; }
+  .dl-btn.secondary { background: rgba(37,244,238,0.08); border-color: rgba(37,244,238,0.2); color: var(--accent2); }
+  .dl-btn:hover { transform: translateY(-2px); box-shadow: 0 6px 20px rgba(0,0,0,0.3); }
+
+  /* AD MIDDLE */
+  .ad-middle {
+    position: relative; z-index: 1;
+    padding: 32px 24px; text-align: center;
+  }
+  .ad-square {
+    width: 300px; height: 250px; margin: 0 auto;
+    background: var(--card); border: 1px dashed var(--border);
+    border-radius: 12px;
+    display: flex; align-items: center; justify-content: center;
+    color: var(--muted); font-size: 12px;
+  }
+
+  .features {
+    position: relative; z-index: 1;
+    padding: 60px 24px; max-width: 1100px; margin: 0 auto;
+  }
+  .section-title { text-align: center; font-size: 32px; font-weight: 900; margin-bottom: 40px; }
+
+  .features-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px,1fr)); gap: 16px; }
+  .feature-card {
+    background: var(--card); border: 1px solid var(--border);
+    border-radius: 20px; padding: 24px 20px;
+    transition: all 0.3s; position: relative; overflow: hidden;
+  }
+  .feature-card:hover { transform: translateY(-4px); border-color: rgba(254,44,85,0.3); }
+  .feature-icon { font-size: 32px; margin-bottom: 12px; display: block; }
+  .feature-title { font-size: 15px; font-weight: 700; margin-bottom: 6px; }
+  .feature-desc { font-size: 13px; color: var(--muted); line-height: 1.7; }
+
+  .how-to { position: relative; z-index: 1; padding: 60px 24px; max-width: 800px; margin: 0 auto; }
+  .steps { display: flex; flex-direction: column; }
+  .step { display: flex; align-items: flex-start; gap: 20px; padding: 24px 0; border-bottom: 1px solid var(--border); }
+  .step:last-child { border-bottom: none; }
+  .step-num {
+    width: 48px; height: 48px;
+    background: linear-gradient(135deg, var(--accent), var(--accent2));
+    border-radius: 14px; display: flex; align-items: center; justify-content: center;
+    font-size: 20px; font-weight: 900; flex-shrink: 0;
+    font-family: 'Space Mono', monospace; color: white;
+  }
+  .step-title { font-size: 17px; font-weight: 700; margin-bottom: 6px; }
+  .step-desc { font-size: 14px; color: var(--muted); line-height: 1.7; }
+
+  /* PAGES LINKS (SEO) */
+  .seo-pages {
+    position: relative; z-index: 1;
+    padding: 40px 24px; max-width: 1100px; margin: 0 auto;
+  }
+  .pages-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px,1fr)); gap: 16px; }
+  .page-card {
+    background: var(--card); border: 1px solid var(--border);
+    border-radius: 16px; padding: 24px;
+    text-decoration: none; color: var(--text);
+    transition: all 0.3s; display: block;
+  }
+  .page-card:hover { transform: translateY(-3px); border-color: rgba(254,44,85,0.3); }
+  .page-card-icon { font-size: 28px; margin-bottom: 12px; }
+  .page-card-title { font-size: 16px; font-weight: 700; margin-bottom: 6px; }
+  .page-card-desc { font-size: 13px; color: var(--muted); line-height: 1.6; }
+
+  /* AD BOTTOM */
+  .ad-bottom {
+    position: relative; z-index: 1;
+    padding: 24px; text-align: center;
+    border-top: 1px solid var(--border);
+  }
+
+  footer {
+    position: relative; z-index: 1;
+    padding: 32px 24px; border-top: 1px solid var(--border);
+    text-align: center; color: var(--muted); font-size: 13px;
+    background: var(--surface);
+  }
+  .footer-links { display: flex; gap: 20px; justify-content: center; margin-bottom: 12px; flex-wrap: wrap; }
+  .footer-links a { color: var(--muted); text-decoration: none; transition: color 0.2s; }
+  .footer-links a:hover { color: var(--text); }
+
+  @keyframes fadeInDown { from{opacity:0;transform:translateY(-20px)} to{opacity:1;transform:translateY(0)} }
+  @keyframes fadeInUp { from{opacity:0;transform:translateY(20px)} to{opacity:1;transform:translateY(0)} }
+
+  @media(max-width:600px){
+    .input-wrapper{flex-direction:column}
+    .btn-download{width:100%}
+    .download-options{grid-template-columns:1fr 1fr}
+    nav{padding:14px 16px}
+    .nav-links{display:none}
+  }
+</style>
+</head>
+<body>
+
+<nav>
+  <a href="/" class="logo">
+    <div class="logo-icon">🎵</div>
+    <span class="logo-text">TikSave</span>
+  </a>
+  <ul class="nav-links">
+    <li><a href="/"class="active">الرئيسية</a></li>
+    <li><a href="/mp3.html"class="active">تحميل MP3</a></li>
+    <li><a href="/blog.html"class="active">المدونة</a></li>
+     <li><a href="/faq.html"class="active">الأسئلة الشائعة</a></li>
+  </ul>
+</nav>
+
+<!-- إعلان أعلى الصفحة 728x90 -->
+<div class="ad-banner-top">
+  <!-- ضع كود Adsterra/Monetag هنا -->
+  <div class="ad-placeholder">إعلان 728×90 — ضع كود Adsterra هنا</div>
+</div>
+
+<section class="hero">
+  <div class="badge">مجاني 100% · بدون علامة مائية</div>
+  <h1>حمّل <span>تيك توك</span><br>بجودة عالية</h1>
+  <p class="subtitle">احفظ أي فيديو من تيك توك بدون علامة مائية، بصيغة MP4 عالية الجودة أو MP3</p>
+
+  <div class="download-card">
+    <div class="format-tabs">
+      <button class="tab active" onclick="setFormat('mp4',this)">🎬 فيديو MP4</button>
+      <button class="tab" onclick="setFormat('mp3',this)">🎵 صوت MP3</button>
+      <button class="tab" onclick="setFormat('hd',this)">✨ HD بدون علامة</button>
+    </div>
+    <div class="input-wrapper">
+      <input type="text" class="url-input" id="urlInput"
+        placeholder="الصق رابط فيديو تيك توك هنا..."
+        onpaste="handlePaste(event)"
+        onkeydown="if(event.key==='Enter') startDownload()">
+      <button class="btn-download" onclick="startDownload()" id="dlBtn">تحميل</button>
+    </div>
+    <div class="loading" id="loading"><div class="spinner"></div><div>جاري معالجة الفيديو...</div></div>
+    <div class="error-msg" id="errorMsg"></div>
+    <div class="result-area" id="resultArea">
+      <div class="result-info">
+        <div class="video-thumb" id="videoThumb">🎬</div>
+        <div class="video-meta">
+          <div class="video-title" id="videoTitle">فيديو تيك توك</div>
+          <div class="video-author" id="videoAuthor">@username</div>
+        </div>
+      </div>
+      <div class="download-options">
+        <a href="#" class="dl-btn primary" id="dlNoWatermark" target="_blank">⬇️ بدون علامة</a>
+        <a href="#" class="dl-btn secondary" id="dlMP3" target="_blank">🎵 MP3</a>
+        <a href="#" class="dl-btn" id="dlOriginal" target="_blank">📹 أصلي</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- إعلان وسط 300x250 -->
+<div class="ad-middle">
+  <!-- ضع كود Adsterra/Monetag هنا -->
+  <div class="ad-square">إعلان 300×250 — ضع كود Adsterra هنا</div>
+</div>
+
+<section class="features">
+  <h2 class="section-title">لماذا TikSave؟</h2>
+  <div class="features-grid">
+    <div class="feature-card"><span class="feature-icon">🚫</span><div class="feature-title">بدون علامة مائية</div><div class="feature-desc">تحميل نظيف جاهز للنشر أو المونتاج</div></div>
+    <div class="feature-card"><span class="feature-icon">⚡</span><div class="feature-title">سريع جداً</div><div class="feature-desc">معالجة فورية لأي فيديو مهما كان حجمه</div></div>
+    <div class="feature-card"><span class="feature-icon">🎵</span><div class="feature-title">تحميل MP3</div><div class="feature-desc">استخرج الصوت من أي فيديو تيك توك</div></div>
+    <div class="feature-card"><span class="feature-icon">📱</span><div class="feature-title">جميع الأجهزة</div><div class="feature-desc">يعمل على جوال أو كمبيوتر بدون تثبيت</div></div>
+    <div class="feature-card"><span class="feature-icon">🔓</span><div class="feature-title">مجاني بلا حد</div><div class="feature-desc">لا تسجيل ولا اشتراك، بلا قيود</div></div>
+    <div class="feature-card"><span class="feature-icon">🛡️</span><div class="feature-title">آمن وخاص</div><div class="feature-desc">لا نحفظ فيديوهاتك أبداً</div></div>
+  </div>
+</section>
+
+<section class="how-to">
+  <h2 class="section-title">كيف تحمّل؟</h2>
+  <div class="steps">
+    <div class="step">
+      <div class="step-num">1</div>
+      <div><div class="step-title">انسخ رابط الفيديو</div><div class="step-desc">افتح تيك توك، اختر الفيديو واضغط مشاركة ثم نسخ الرابط</div></div>
+    </div>
+    <div class="step">
+      <div class="step-num">2</div>
+      <div><div class="step-title">الصق الرابط</div><div class="step-desc">الصق الرابط في الحقل أعلاه واضغط تحميل</div></div>
+    </div>
+    <div class="step">
+      <div class="step-num">3</div>
+      <div><div class="step-title">اختر الصيغة وحمّل</div><div class="step-desc">اختر MP4 بدون علامة أو MP3 وحمّل الملف مباشرة</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- صفحات إضافية تجلب زيارات SEO -->
+<section class="seo-pages">
+  <h2 class="section-title">أدوات أخرى</h2>
+  <div class="pages-grid">
+    <a href="/mp3.html" class="page-card">
+      <div class="page-card-icon">🎵</div>
+      <div class="page-card-title">تحميل تيك توك MP3</div>
+      <div class="page-card-desc">استخرج الصوت من أي فيديو تيك توك بجودة عالية بصيغة MP3</div>
+    </a>
+    <a href="/how-to.html" class="page-card">
+      <div class="page-card-icon">📖</div>
+      <div class="page-card-title">كيفية تحميل تيك توك</div>
+      <div class="page-card-desc">دليل شامل لتحميل فيديوهات تيك توك على جميع الأجهزة</div>
+    </a>
+    <a href="/blog.html" class="page-card">
+      <div class="page-card-icon">✍️</div>
+      <div class="page-card-title">المدونة</div>
+      <div class="page-card-desc">مقالات ونصائح حول تيك توك وأفضل طرق تحميل الفيديوهات</div>
+    </a>
+    <a href="/faq.html" class="page-card">
+      <div class="page-card-icon">❓</div>
+      <div class="page-card-title">الأسئلة الشائعة</div>
+      <div class="page-card-desc">إجابات على أكثر الأسئلة شيوعاً حول تحميل تيك توك</div>
+    </a>
+  </div>
+</section>
+
+<!-- إعلان أسفل الصفحة -->
+<div class="ad-bottom">
+  <!-- ضع كود Adsterra/Monetag هنا -->
+  <div class="ad-placeholder" style="max-width:728px;height:90px;margin:0 auto">إعلان 728×90 — ضع كود Adsterra هنا</div>
+</div>
+
+<footer>
+  <div class="footer-links">
+    <a href="/">الرئيسية</a>
+    <a href="/mp3.html">تحميل MP3</a>
+    <a href="/faq.html">الأسئلة الشائعة</a>
+    <a href="/blog.html">المدونة</a>
+    <a href="/privacy.html">سياسة الخصوصية</a>
+  </div>
+  <p>© 2025 TikSave · نحن لسنا تابعين لـ TikTok أو Bytedance</p>
+</footer>
+
+<script>
+  let currentFormat = 'mp4';
+  function setFormat(fmt, el) {
+    currentFormat = fmt;
+    document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+    el.classList.add('active');
+  }
+  function handlePaste(e) {
+    setTimeout(() => {
+      const val = document.getElementById('urlInput').value.trim();
+      if (val.includes('tiktok.com')) startDownload();
+    }, 100);
+  }
+  async function startDownload() {
+    const url = document.getElementById('urlInput').value.trim();
+    const loading = document.getElementById('loading');
+    const errorMsg = document.getElementById('errorMsg');
+    const resultArea = document.getElementById('resultArea');
+    const dlBtn = document.getElementById('dlBtn');
+    loading.classList.remove('show');
+    errorMsg.classList.remove('show');
+    resultArea.classList.remove('show');
+    if (!url) { showError('الرجاء إدخال رابط الفيديو أولاً'); return; }
+    if (!url.includes('tiktok.com')) { showError('الرابط غير صحيح، يجب أن يكون رابط تيك توك'); return; }
+    loading.classList.add('show');
+    dlBtn.disabled = true; dlBtn.textContent = '...';
+    try {
+      const response = await fetch('/api/download', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ url, format: currentFormat })
+      });
+      const data = await response.json();
+      if (!response.ok || data.error) throw new Error(data.error || 'حدث خطأ');
+      loading.classList.remove('show');
+      showResult(data);
+    } catch (err) {
+      loading.classList.remove('show');
+      showError(err.message);
+    } finally {
+      dlBtn.disabled = false; dlBtn.textContent = 'تحميل';
+    }
+  }
+  function showResult(data) {
+    document.getElementById('videoTitle').textContent = data.title || 'فيديو تيك توك';
+    document.getElementById('videoAuthor').textContent = '@' + (data.author || 'unknown');
+    if (data.thumbnail) {
+      const thumb = document.getElementById('videoThumb');
+      thumb.innerHTML = `<img src="${data.thumbnail}" alt="thumbnail">`;
+    }
+    if (data.download_no_watermark) document.getElementById('dlNoWatermark').href = data.download_no_watermark;
+    if (data.download_mp3) document.getElementById('dlMP3').href = data.download_mp3;
+    if (data.download_original) document.getElementById('dlOriginal').href = data.download_original;
+    document.getElementById('resultArea').classList.add('show');
+  }
+  function showError(msg) {
+    const e = document.getElementById('errorMsg');
+    e.textContent = '⚠️ ' + msg;
+    e.classList.add('show');
+  }
+</script>
+</body>
+</html>
